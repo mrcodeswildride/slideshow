@@ -1,11 +1,10 @@
-var timeline = document.getElementById("timeline");
+let slider = document.getElementById(`slider`)
+let currentSlide = document.getElementById(`slide1`)
 
-var selectedItem = document.getElementById("slide1");
+slider.addEventListener(`input`, changeSlide)
 
-timeline.addEventListener("input", moveTimeline);
-
-function moveTimeline() {
-    selectedItem.style.display = "none";
-    selectedItem = document.getElementById("slide" + timeline.value);
-    selectedItem.style.display = "block";
+function changeSlide() {
+  currentSlide.style.display = `none`
+  currentSlide = document.getElementById(`slide${slider.value}`)
+  currentSlide.style.display = `block`
 }

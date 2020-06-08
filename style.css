@@ -1,0 +1,53 @@
+body {
+  background-color: beige;
+}
+
+#slide2,
+#slide3,
+#slide4,
+#slide5,
+#slide6,
+#slide7 {
+  display: none;
+}
+
+.slide {
+  min-height: 250px;
+  margin-left: 15px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  width: 710px;
+  border-bottom: 1px dotted black;
+}
+
+img,
+p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+img {
+  margin-right: 30px;
+}
+
+p {
+  width: 380px;
+}
+
+#slider {
+  width: 710px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.year {
+  display: inline-block;
+  margin-left: 4px;
+  margin-right: 76.5px;
+}
+
+.year:last-child {
+  margin-right: 0;
+}
